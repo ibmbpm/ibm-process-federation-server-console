@@ -1,0 +1,22 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '@carbon/react/scss/spacing' as *;
+
+/**
+ * Property name in a list of properties
+ */
+.properties-list .cds--structured-list-content--nowrap {
+  font-style: italic;
+}
+
+.properties-list.cds--structured-list.cds--structured-list--condensed
+  .cds--structured-list-td {
+  padding: 0em;
+}
+
+.properties-list-title {
+  font-weight: normal;
+  font-size: medium;
+}

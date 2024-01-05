@@ -1,0 +1,20 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/theme' as *;
+
+/**
+* Federated Data Repository
+*/
+
+.federated-data-repository .name {
+  font-size: medium;
+  font-weight: normal;
+}
+
+.federated-data-repository .problematic {
+  font-weight: normal;
+  color: $support-error;
+}

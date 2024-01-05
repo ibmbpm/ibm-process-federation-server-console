@@ -1,0 +1,22 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '@carbon/react/scss/theme' as *;
+@use '@carbon/colors' as *;
+
+.runtimedata-error-panel {
+  border: 1px solid;
+  border-color: $border-subtle-00;
+  padding: 16px;
+}
+
+.runtimedata-error-panel-title {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.runtimedata-error-panel-message {
+  font-weight: normal;
+  font-size: small;
+}

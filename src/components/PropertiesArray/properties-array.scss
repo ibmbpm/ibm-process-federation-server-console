@@ -1,0 +1,55 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/styles/scss/theme' as *;
+
+.properties-array .cds--structured-list-th {
+  height: $spacing-03;
+}
+
+.properties-array .cds--structured-list-td,
+.properties-array .cds--structured-list-th {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  white-space: nowrap;
+}
+
+.properties-array .cds--structured-list-td:first-of-type,
+.properties-array .cds--structured-list-th:first-of-type {
+  padding-left: 0rem;
+}
+
+.properties-array .cds--structured-list-td:first-child,
+.properties-array .cds--structured-list-th:first-child {
+  padding-left: 0rem;
+}
+
+.properties-array
+  .cds--structured-list-row
+  .cds--structured-list-td:first-of-type,
+.properties-array
+  .cds--structured-list-row
+  .cds--structured-list-th:first-of-type {
+  padding-left: 0rem;
+}
+
+.properties-array-title {
+  font-weight: normal;
+  font-size: medium;
+}
+
+/**
+ * Div that wrap StructuredListRow element to workaround onChange event handler for StructuredListInput not working
+ **/
+.properties-array-row-wrapper {
+  display: contents;
+  cursor: pointer;
+}
+
+.properties-array-row-wrapper:hover .cds--structured-list-td {
+  background-color: $background-hover;
+}

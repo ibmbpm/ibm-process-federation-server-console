@@ -1,0 +1,244 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '../../components/MonitoringDataTable/monitoring-data-table.scss';
+@use '../../components/PropertiesList/properties-list.scss';
+@use '../federatedsystem/federatedsystem.scss';
+@use '../federateddatarepository/federateddatarepository.scss';
+@use './runtimedata-error.scss';
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/theme' as *;
+@use '@carbon/react/scss/colors';
+
+/**
+ * Hide labels on contained lists
+ */
+.cds--data-table .cds--contained-list__header {
+  display: none;
+}
+
+/**
+ * Align text and icons when together
+ */
+.icon-with-text {
+  position: relative;
+  top: 3px;
+}
+
+/**
+ * align cell's content on top for the federated systems table
+ */
+.process-federation-servers-table .cds--data-table td {
+  vertical-align: top;
+}
+
+/**
+ * PFS and Federated Systems identifiers in table rows
+ */
+
+.table-row-identifier {
+  font-size: large;
+  font-weight: bold;
+}
+
+/**
+ * PFS endpoint
+ */
+
+.endpoint__r1 {
+  padding-left: $spacing-02;
+}
+
+.endpoint__r2 {
+  padding-left: $spacing-02;
+  padding-bottom: $spacing-05;
+}
+
+.problematic .endpoint__r3 {
+  padding-bottom: $spacing-05;
+}
+
+.monitoring-data-table-cell .endpoint {
+  padding-top: $spacing-05;
+}
+
+/**
+ * Federated system info in the federated systems table
+ */
+
+.monitoring-data-table-cell .systeminfo {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+}
+
+.systeminfo__r1 {
+  padding-left: $spacing-02;
+}
+
+.systeminfo__r2 {
+  padding-left: $spacing-02;
+  padding-top: $spacing-01;
+  padding-bottom: $spacing-05;
+}
+
+/**
+ * Federated data repository
+ */
+.monitoring-data-table-cell .federated-data-repository-properties {
+  padding-top: $spacing-04;
+  padding-bottom: $spacing-05;
+}
+
+/**
+ * Federated systems list
+ */
+
+.federated-systems-list .cds--contained-list-item__content,
+.cds--contained-list-item--clickable .cds--contained-list-item__content {
+  padding-left: 0em;
+}
+
+.federated-systems-list .cds--contained-list-item__content {
+  padding-left: 0em;
+}
+
+.monitoring-data-table-cell .no-federated-systems-list {
+  display: inline-block;
+  margin-top: $spacing-04;
+}
+
+/**
+ * Hovering the federated system list entries
+ */
+
+.cds--parent-row .cds--contained-list-item__content:hover {
+  background-color: $background-hover !important;
+}
+
+/**
+ * In a selectable federated systems list, display the selected feedback icon to the right
+ */
+.selection-icon {
+  display: block;
+  position: relative;
+  top: 1.5px;
+  float: right;
+  padding-right: 1.5px;
+}
+
+/**
+ * Detail message
+ */
+.detail-message {
+  margin-left: -$spacing-02;
+}
+
+/**
+ * Status
+ */
+
+.status {
+  color: $support-success;
+}
+
+/**
+ * Make sure that inline notifications have a proper margin when displayed in a table cell
+ */
+
+.monitoring-data-table-cell .cds--inline-notification {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-05;
+}
+
+.monitoring-data-table-cell
+  .federated-data-repository-properties
+  .cds--inline-notification {
+  margin-top: $spacing-01;
+  margin-bottom: 0px;
+}
+
+.cds--expandable-row.problematic .cds--inline-notification {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-05;
+}
+
+/**
+ * Federated system status in Process Federation Server table
+ */
+
+.status-ok-icon {
+  fill: $support-success;
+}
+
+.federated-system-list.status-red {
+  .status-icon {
+    fill: $support-error;
+    float: left;
+  }
+  .federated-system-name {
+    padding-left: $spacing-06;
+    display: block;
+  }
+}
+
+.federated-system-list.status-yellow {
+  .status-icon {
+    fill: $support-warning;
+    float: left;
+    path[opacity='0'] {
+      fill: black;
+      opacity: 1;
+    }
+  }
+  .federated-system-name {
+    padding-left: $spacing-06;
+    display: block;
+  }
+}
+
+.federated-system-list.status-red button.cds--contained-list-item__content div {
+  background-color: rgb(255, 241, 241);
+  border-left-width: 3px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: $support-error;
+  padding: 5px;
+}
+
+.federated-system-list.status-yellow
+  button.cds--contained-list-item__content
+  div {
+  background-color: rgb(253, 246, 221);
+  border-left-width: 3px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: $support-warning;
+  padding: 5px;
+}
+
+/**
+ * Status in indexers, retrievers and properties lists
+ */
+
+.cds--structured-list-row.status-red {
+  background-color: $support-error;
+}
+
+.cds--structured-list-row.status-red .cds--structured-list-td {
+  color: white;
+  font-weight: bold;
+}
+
+.cds--structured-list-row.status-yellow {
+  background-color: $support-warning;
+}
+
+.cds--structured-list-row.status-yellow .cds--structured-list-td {
+  color: white;
+  font-weight: bold;
+}

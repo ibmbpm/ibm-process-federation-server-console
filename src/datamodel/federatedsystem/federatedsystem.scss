@@ -1,0 +1,66 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/styles/scss/theme' as *;
+@use '../indexer/indexer.scss';
+@use '../retriever/retriever.scss';
+@use '../../components/PropertiesArray/properties-array.scss';
+
+/**
+ * Federated system information
+ */
+
+.federated-system-information {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-05;
+}
+
+.federated-system-information-r1 {
+  margin-top: $spacing-03;
+  margin-bottom: $spacing-05;
+  margin-left: $spacing-04;
+}
+
+.federated-system-information-r1 h4 {
+  font-weight: bold;
+}
+
+.federated-system-information-r2 {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-05;
+  margin-left: $spacing-04;
+}
+
+.federated-system-information-r3 {
+  margin-top: $spacing-03;
+  margin-bottom: $spacing-05;
+  margin-left: $spacing-04;
+}
+
+.federated-system-information-r4 {
+  margin-top: $spacing-03;
+  margin-bottom: $spacing-05;
+  margin-left: $spacing-04;
+}
+
+.federated-system-modal-heading-stack {
+  align-items: center;
+}
+
+/**
+ * Indexing and retriever status in the Modals
+ */
+.modal-refresh-toggle-and-status .cds--inline-notification {
+  float: right;
+  margin-top: $spacing-04;
+}
+
+/**
+ * Database configuration warning message
+ */
+.cds--tab-content .cds--inline-notification.database-warning {
+  margin-top: $spacing-05;
+  margin-bottom: 0px;
+}

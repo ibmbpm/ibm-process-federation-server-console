@@ -1,0 +1,24 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '../../datamodel/runtimedata/runtimedata.scss';
+@use '@carbon/react/scss/spacing' as *;
+
+.monitoring-page__r0 {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+}
+
+.monitoring-page__r1 {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+}
+
+/**
+ * Align table content with tab headers in the page
+ */
+.cds--tab-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}

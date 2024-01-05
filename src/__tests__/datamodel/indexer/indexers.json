@@ -1,0 +1,440 @@
+{
+    "id": "TESTDATA",
+    "bpdServerTimezone": "test_data",
+    "useIndexLogFile": false,
+    "indexingInterval": 1000,
+    "numberOfRetries": 5,
+    "schemaName": "DB2ADMIN",
+    "type": "BPEL",
+    "cleanupChangeLogBatchSize": 5000,
+    "database": {
+        "schema": "DB2ADMIN",
+        "driverVersion": "4.32.28",
+        "consumerColumn": "CONSUMER_003",
+        "driverMajorVersion": 4,
+        "driverMinorVersion": 32,
+        "driverName": "IBM Data Server Driver for JDBC and SQLJ"
+    },
+    "partition": {
+        "cur": 5000,
+        "pre": 0,
+        "min": 0,
+        "max": 5000
+    },
+    "isRunning": true,
+    "indexProcessingBatchSize": 1000,
+    "maintenanceProcessingBatchSize": 1000,
+    "synchronizeTasksAtStartup": true,
+    "cleanupChangeLogInterval": 1000,
+    "maxBackupIndexLogFiles": 1,
+    "kpi": {
+        "numberOfCompletedCycles": {
+            "total": 1284,
+            "inactive": 1236,
+            "active": 48
+        },
+        "indexUpdates": {
+            "avgPerActiveCycle": 0.0,
+            "total": 0,
+            "min": 0,
+            "avgPerCycle": 0.0,
+            "max": 0
+        },
+        "warnings": {
+            "total": 0,
+            "lastCycles": []
+        },
+        "runningTime": {
+            "ms": 1563221,
+            "human": "26m 3.22s"
+        },
+        "processedChangelogEntries": {
+            "avgPerActiveCycle": 0.0,
+            "total": 0,
+            "min": 0,
+            "avgPerCycle": 0.0,
+            "max": 0
+        },
+        "consumedChangelogEntries": {
+            "avgPerActiveCycle": 0.0,
+            "total": 0,
+            "min": 0,
+            "avgPerCycle": 0.0,
+            "max": 0
+        },
+        "indexDeletions": {
+            "avgPerActiveCycle": 0.0,
+            "total": 0,
+            "min": 0,
+            "avgPerCycle": 0.0,
+            "max": 0
+        },
+        "lastCycles": [
+            {
+                "duration": {
+                    "ms": 1099,
+                    "human": "1.1s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:31.282Z",
+                    "ts": 1696434631282
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:32.381Z",
+                    "ts": 1696434632381
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 891,
+                    "human": "0.89s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:30.281Z",
+                    "ts": 1696434630281
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:31.172Z",
+                    "ts": 1696434631172
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 901,
+                    "human": "0.9s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:29.278Z",
+                    "ts": 1696434629278
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:30.179Z",
+                    "ts": 1696434630179
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 1096,
+                    "human": "1.1s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:28.182Z",
+                    "ts": 1696434628182
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:29.278Z",
+                    "ts": 1696434629278
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 908,
+                    "human": "0.91s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:27.181Z",
+                    "ts": 1696434627181
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:28.089Z",
+                    "ts": 1696434628089
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 906,
+                    "human": "0.91s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:26.180Z",
+                    "ts": 1696434626180
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:27.086Z",
+                    "ts": 1696434627086
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 1117,
+                    "human": "1.12s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:25.063Z",
+                    "ts": 1696434625063
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:26.180Z",
+                    "ts": 1696434626180
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 910,
+                    "human": "0.91s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:24.062Z",
+                    "ts": 1696434624062
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:24.972Z",
+                    "ts": 1696434624972
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 918,
+                    "human": "0.92s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:23.061Z",
+                    "ts": 1696434623061
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:23.979Z",
+                    "ts": 1696434623979
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            },
+            {
+                "duration": {
+                    "ms": 1099,
+                    "human": "1.1s"
+                },
+                "indexDeletions": 0,
+                "indexUpdates": 0,
+                "warnings": [],
+                "start": {
+                    "human": "2023-10-04T15:50:21.962Z",
+                    "ts": 1696434621962
+                },
+                "maintenanceOperations": {},
+                "end": {
+                    "human": "2023-10-04T15:50:23.061Z",
+                    "ts": 1696434623061
+                },
+                "processedChangelogEntries": 0,
+                "consumedChangelogEntries": 0,
+                "errors": []
+            }
+        ],
+        "lastInactiveCycleEnd": {
+            "human": "2023-10-04T15:50:32.381Z",
+            "ts": 1696434632381
+        },
+        "cyclesDuration": {
+            "inactive": {
+                "total": {
+                    "ms": 1256078,
+                    "human": "20m 56.08s"
+                },
+                "min": {
+                    "ms": 885,
+                    "human": "0.89s"
+                },
+                "avg": {
+                    "ms": 1016,
+                    "human": "1.02s"
+                },
+                "max": {
+                    "ms": 2506,
+                    "human": "2.51s"
+                }
+            },
+            "active": {
+                "total": {
+                    "ms": 235160,
+                    "human": "3m 55.16s"
+                },
+                "min": {
+                    "ms": 3421,
+                    "human": "3.42s"
+                },
+                "avg": {
+                    "ms": 4899,
+                    "human": "4.9s"
+                },
+                "max": {
+                    "ms": 24432,
+                    "human": "24.43s"
+                }
+            }
+        },
+        "maintenanceOperations": {
+            "INDEX_LOG_TRIM": {
+                "duration": {
+                    "total": {
+                        "ms": 73880,
+                        "human": "1m 13.88s"
+                    },
+                    "min": {
+                        "ms": 2356,
+                        "human": "2.36s"
+                    },
+                    "avg": {
+                        "ms": 2955,
+                        "human": "2.96s"
+                    },
+                    "max": {
+                        "ms": 4107,
+                        "human": "4.11s"
+                    }
+                },
+                "count": 25
+            },
+            "SYNC_TASKS": {
+                "duration": {
+                    "total": {
+                        "ms": 54588,
+                        "human": "54.59s"
+                    },
+                    "min": {
+                        "ms": 1790,
+                        "human": "1.79s"
+                    },
+                    "avg": {
+                        "ms": 2183,
+                        "human": "2.18s"
+                    },
+                    "max": {
+                        "ms": 3964,
+                        "human": "3.96s"
+                    }
+                },
+                "count": 25
+            }
+        },
+        "kpiTimestamp": {
+            "human": "2023-10-04T15:50:33.225Z",
+            "ts": 1696434633225
+        },
+        "errors": {
+            "total": 0,
+            "lastCycles": [
+                {
+                    "errors": [],
+                    "start": {
+                        "human": "2023-10-04T15:50:18.867Z",
+                        "ts": 1696434618867
+                    }
+                }
+            ]
+        },
+        "lastActiveCycleEnd": {
+            "human": "2023-10-04T15:50:18.867Z",
+            "ts": 1696434618867
+        }
+    },
+    "maxIndexLogFileSize": "200M",
+    "dbTimeCheckInterval": 300000,
+    "kpiCollection": true,
+    "config.displayId": "usr_bpelIndexer[default-0]",
+    "indexLogFileBackupInterval": 60000,
+    "dbIndexLogBatchSize": 3,
+    "maintenanceOperations": {
+        "INDEX_LOG_TRIM": {
+            "indexLogTrimInterval": 60000,
+            "scheduledIndexLogTrim": true,
+            "nextScheduledTime": "2023-10-04T15:51:16.425Z"
+        },
+        "SYNC_TASKS": {
+            "scheduledSyncTasks": true,
+            "synchronizeTasksInterval": 60000,
+            "nextScheduledTime": "2023-10-04T15:51:04.768Z"
+        },
+        "SYNC_TASK_DELETES": {
+            "synchronizeTasksDeleteInterval": 3600000
+        }
+    },
+    "useMBean": true,
+    "status": "RETRIEVING_CHANGE_LOG_ENTRIES",
+    "statistics": {
+        "lastCycleIndexingRate": 89.01098901098901,
+        "averageIndexedDocumentsRate": -1.0,
+        "averageClaimedChangeLogEntriesDurations": 181.28,
+        "maintenanceOperations": {
+            "IndexLogTrim": {
+                "processCount": "99",
+                "allDatabaseEntryProcessed": "true"
+            },
+            "SyncTasks": {
+                "taskCount": "0",
+                "processCount": "0",
+                "allDatabaseEntryProcessed": "true",
+                "processBatchSize": "1000"
+            }
+        },
+        "averageConsumedChangeLogEntriesDurations": -1.0,
+        "lastCycleIndexingFailures": {
+            "failures": "0",
+            "numberRetries": "5",
+            "timestamp": "2023-10-04 17:50:32"
+        },
+        "lastIndexedDocumentsRate": -1.0,
+        "averageLastCyclesIndexingRate": 90.67856633585978,
+        "averageFetchDataToIndexDurations": -1.0
+    }
+}

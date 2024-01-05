@@ -1,0 +1,181 @@
+{
+    "isRunning": true,
+    "config.displayId": "usr_caseRetriever[default-0]",
+    "internalRestUrlPrefix": "http:\/\/localhost:9080\/pfs-fvt-case\/case\/",
+    "readTimeout": 10000,
+    "connectTimeout": 10000,
+    "propagateCookieNames": "LtpaToken2",
+    "propagateHeaderNames": "",
+    "additionalHeaders": "",
+    "kpi": {
+        "errors": {
+            "lastRestAPICallsWithError": [
+                {
+                    "start": {
+                        "human": "2023-10-04T15:32:43.527Z",
+                        "ts": 1696433563527
+                    },
+                    "end": {
+                        "human": "2023-10-04T15:32:51.402Z",
+                        "ts": 1696433571402
+                    },
+                    "duration": {
+                        "human": "2023-10-04T15:32:51.402Z",
+                        "ts": 1696433571402
+                    },
+                    "type": "TYPE",
+                    "path": "PATH",
+                    "user": "USER",
+                    "status": "STATUS"
+                }
+            ]
+        },
+        "lastRestAPICalls": [
+            {
+                "duration": {
+                    "ms": 13,
+                    "human": "0.01s"
+                },
+                "path": "casetypes",
+                "start": {
+                    "human": "2023-10-04T15:39:19.595Z",
+                    "ts": 1696433959595
+                },
+                "end": {
+                    "human": "2023-10-04T15:39:19.608Z",
+                    "ts": 1696433959608
+                },
+                "type": "LAUNCH_LIST",
+                "error": false,
+                "user": "uid=fdadmin,o=defaultWIMFileBasedRealm",
+                "status": "HTTP 200: OK"
+            },
+            {
+                "duration": {
+                    "ms": 44,
+                    "human": "0.04s"
+                },
+                "path": "\/systems",
+                "start": {
+                    "human": "2023-10-04T15:39:18.734Z",
+                    "ts": 1696433958734
+                },
+                "end": {
+                    "human": "2023-10-04T15:39:18.778Z",
+                    "ts": 1696433958778
+                },
+                "type": "SYSTEM_STATUS",
+                "error": false,
+                "user": "uid=fdadmin,o=defaultWIMFileBasedRealm",
+                "status": "HTTP 200: System fetch result: systemType=SYSTEM_TYPE_CASE, systemID=1071A01E-ECC5-4A09-9E46-11C77628C1A6, version20.0.0.2-20200814.141130"
+            }
+        ],
+        "kpiTimestamp": {
+            "human": "2023-10-04T15:50:33.224Z",
+            "ts": 1696434633224
+        },
+        "restAPICalls": {
+            "GLOBAL_TEAMS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "MANAGED_TEAMS_MEMBERSHIPS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "total": 2,
+            "lastRestAPICallEnd": {
+                "human": "2023-10-04T15:39:19.608Z",
+                "ts": 1696433959608
+            },
+            "USER_GROUPS_IDS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "GLOBAL_TEAM_USERS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "META_BUSINESS_DATA_FIELDS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "LAUNCH_LIST": {
+                "duration": {
+                    "total": {
+                        "ms": 13,
+                        "human": "0.01s"
+                    },
+                    "min": {
+                        "ms": 13,
+                        "human": "0.01s"
+                    },
+                    "avg": {
+                        "ms": 13,
+                        "human": "0.01s"
+                    },
+                    "max": {
+                        "ms": 13,
+                        "human": "0.01s"
+                    }
+                },
+                "count": 1,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "PROCESSES": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "SYSTEM_STATUS": {
+                "duration": {
+                    "total": {
+                        "ms": 44,
+                        "human": "0.04s"
+                    },
+                    "min": {
+                        "ms": 44,
+                        "human": "0.04s"
+                    },
+                    "avg": {
+                        "ms": 44,
+                        "human": "0.04s"
+                    },
+                    "max": {
+                        "ms": 44,
+                        "human": "0.04s"
+                    }
+                },
+                "count": 1,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "GLOBAL_TEAMS_MEMBERSHIPS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            },
+            "MANAGED_TEAMS": {
+                "count": 0,
+                "errors": {
+                    "total": 0
+                }
+            }
+        }
+    }
+}

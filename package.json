@@ -1,0 +1,90 @@
+{
+  "name": "ibm-process-federation-server-console",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "git@github.com:ibmbpm/ibm-process-federation-server-console.git",
+  "license": "IBM",
+  "scripts": {
+    "build": "react-scripts build",
+    "ci-check": "yarn format:diff",
+    "clean": "yarn cache clean && yarn install",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
+    "format:staged": "prettier --write",
+    "start": "DANGEROUSLY_DISABLE_HOST_CHECK=true react-scripts start",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "@carbon/colors": "^11.18.0",
+    "@carbon/pictograms-react": "^11.46.0",
+    "@carbon/react": "1.31.3",
+    "http-proxy-middleware": "2.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "@testing-library/dom": "9.3.3",
+    "@testing-library/jest-dom": "6.1.4",
+    "@testing-library/react": "14.0.0",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.5",
+    "msw": "2.0.3",
+    "prettier": "1.17.0",
+    "sass": "1.51.0",
+    "wait-for-expect": "3.0.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn format:staged",
+      "git add"
+    ],
+    "*.{scss,css}": [
+      "yarn format:staged",
+      "git add"
+    ],
+    "*.md": [
+      "yarn format:staged",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!mswjs)/"
+    ],
+    "testMatch": [
+      "<rootDir>/src/__tests__/(?!testutils)*/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/__tests__/(?!testutils)*/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ]
+  }
+}

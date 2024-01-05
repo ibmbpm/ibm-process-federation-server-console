@@ -1,0 +1,41 @@
+/*
+ Copyright IBM Corp. 2023
+*/
+
+@use '../../components/PropertiesArray/properties-array.scss';
+@use '@carbon/react/scss/spacing' as *;
+
+.indexer-last-cycles > .properties-array-title {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-03;
+}
+
+.indexer-warnings > .properties-array-title {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-03;
+}
+
+.warning-message {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.indexer-errors > .properties-array-title {
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-03;
+}
+
+.error-message {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.cds--tab-content .cds--inline-notification {
+  margin-bottom: $spacing-05;
+}
